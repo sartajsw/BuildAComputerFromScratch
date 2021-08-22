@@ -1,0 +1,96 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib64/ivl/system.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib64/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib64/ivl/va_math.vpi";
+S_0x55ff31e4a310 .scope module, "t_OR" "t_OR" 2 1;
+ .timescale 0 0;
+v0x55ff31e607f0_0 .var "A", 1 0;
+v0x55ff31e608d0_0 .net "B", 0 0, L_0x55ff31e60e00;  1 drivers
+L_0x55ff31e60eb0 .part v0x55ff31e607f0_0, 1, 1;
+L_0x55ff31e60f50 .part v0x55ff31e607f0_0, 0, 1;
+S_0x55ff31e4a4a0 .scope module, "or1" "OR" 2 5, 3 1 0, S_0x55ff31e4a310;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "C";
+    .port_info 1 /INPUT 1 "A";
+    .port_info 2 /INPUT 1 "B";
+v0x55ff31e60310_0 .net "A", 0 0, L_0x55ff31e60eb0;  1 drivers
+v0x55ff31e603b0_0 .net "AB_b", 0 0, L_0x55ff31e60cc0;  1 drivers
+v0x55ff31e60450_0 .net "A_b", 0 0, L_0x55ff31e609e0;  1 drivers
+v0x55ff31e60570_0 .net "B", 0 0, L_0x55ff31e60f50;  1 drivers
+v0x55ff31e60610_0 .net "B_b", 0 0, L_0x55ff31e60ac0;  1 drivers
+v0x55ff31e60750_0 .net "C", 0 0, L_0x55ff31e60e00;  alias, 1 drivers
+S_0x55ff31e0fcf0 .scope module, "G1" "NOT" 3 6, 4 1 0, S_0x55ff31e4a4a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "A_b";
+    .port_info 1 /INPUT 1 "A";
+L_0x55ff31e609e0 .functor NAND 1, L_0x55ff31e60eb0, C4<1>, C4<1>, C4<1>;
+v0x55ff31e0fed0_0 .net "A", 0 0, L_0x55ff31e60eb0;  alias, 1 drivers
+v0x55ff31e5f140_0 .net "A_b", 0 0, L_0x55ff31e609e0;  alias, 1 drivers
+S_0x55ff31e5f260 .scope module, "G2" "NOT" 3 7, 4 1 0, S_0x55ff31e4a4a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "A_b";
+    .port_info 1 /INPUT 1 "A";
+L_0x55ff31e60ac0 .functor NAND 1, L_0x55ff31e60f50, C4<1>, C4<1>, C4<1>;
+v0x55ff31e5f440_0 .net "A", 0 0, L_0x55ff31e60f50;  alias, 1 drivers
+v0x55ff31e5f520_0 .net "A_b", 0 0, L_0x55ff31e60ac0;  alias, 1 drivers
+S_0x55ff31e5f640 .scope module, "G3" "AND" 3 8, 5 1 0, S_0x55ff31e4a4a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "C";
+    .port_info 1 /INPUT 1 "A";
+    .port_info 2 /INPUT 1 "B";
+L_0x55ff31e60bc0 .functor NAND 1, L_0x55ff31e609e0, L_0x55ff31e60ac0, C4<1>, C4<1>;
+v0x55ff31e5fc70_0 .net "A", 0 0, L_0x55ff31e609e0;  alias, 1 drivers
+v0x55ff31e5fd10_0 .net "B", 0 0, L_0x55ff31e60ac0;  alias, 1 drivers
+v0x55ff31e5fdb0_0 .net "C", 0 0, L_0x55ff31e60cc0;  alias, 1 drivers
+v0x55ff31e5fe50_0 .net "C_b", 0 0, L_0x55ff31e60bc0;  1 drivers
+S_0x55ff31e5f870 .scope module, "G2" "NOT" 5 7, 4 1 0, S_0x55ff31e5f640;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "A_b";
+    .port_info 1 /INPUT 1 "A";
+L_0x55ff31e60cc0 .functor NAND 1, L_0x55ff31e60bc0, C4<1>, C4<1>, C4<1>;
+v0x55ff31e5fa70_0 .net "A", 0 0, L_0x55ff31e60bc0;  alias, 1 drivers
+v0x55ff31e5fb50_0 .net "A_b", 0 0, L_0x55ff31e60cc0;  alias, 1 drivers
+S_0x55ff31e5ff20 .scope module, "G4" "NOT" 3 9, 4 1 0, S_0x55ff31e4a4a0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "A_b";
+    .port_info 1 /INPUT 1 "A";
+L_0x55ff31e60e00 .functor NAND 1, L_0x55ff31e60cc0, C4<1>, C4<1>, C4<1>;
+v0x55ff31e60100_0 .net "A", 0 0, L_0x55ff31e60cc0;  alias, 1 drivers
+v0x55ff31e601f0_0 .net "A_b", 0 0, L_0x55ff31e60e00;  alias, 1 drivers
+    .scope S_0x55ff31e4a310;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "or.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55ff31e4a4a0 {0 0 0};
+    %vpi_call 2 11 "$monitor", "Time: %d, A: %b, B: %b, C: %b", $time, &PV<v0x55ff31e607f0_0, 1, 1>, &PV<v0x55ff31e607f0_0, 0, 1>, v0x55ff31e608d0_0 {0 0 0};
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x55ff31e607f0_0, 0, 2;
+    %pushi/vec4 3, 0, 32;
+T_0.0 %dup/vec4;
+    %pushi/vec4 0, 0, 32;
+    %cmp/s;
+    %jmp/1xz T_0.1, 5;
+    %jmp/1 T_0.1, 4;
+    %pushi/vec4 1, 0, 32;
+    %sub;
+    %delay 10, 0;
+    %load/vec4 v0x55ff31e607f0_0;
+    %addi 1, 0, 2;
+    %store/vec4 v0x55ff31e607f0_0, 0, 2;
+    %jmp T_0.0;
+T_0.1 ;
+    %pop/vec4 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "or_tb.v";
+    "or.v";
+    "not.v";
+    "and.v";

@@ -1,0 +1,147 @@
+$date
+	Thu Aug 19 19:32:27 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_MUX2x1 $end
+$scope module mux1 $end
+$var wire 1 ! A $end
+$var wire 1 " B $end
+$var wire 1 # S $end
+$var wire 1 $ T2 $end
+$var wire 1 % T1 $end
+$var wire 1 & S_b $end
+$var wire 1 ' O $end
+$scope module G1 $end
+$var wire 1 # A $end
+$var wire 1 & A_b $end
+$upscope $end
+$scope module G2 $end
+$var wire 1 & A $end
+$var wire 1 ! B $end
+$var wire 1 ( C_b $end
+$var wire 1 % C $end
+$scope module G2 $end
+$var wire 1 ( A $end
+$var wire 1 % A_b $end
+$upscope $end
+$upscope $end
+$scope module G3 $end
+$var wire 1 # A $end
+$var wire 1 " B $end
+$var wire 1 ) C_b $end
+$var wire 1 $ C $end
+$scope module G2 $end
+$var wire 1 ) A $end
+$var wire 1 $ A_b $end
+$upscope $end
+$upscope $end
+$scope module G4 $end
+$var wire 1 % A $end
+$var wire 1 $ B $end
+$var wire 1 ' C $end
+$var wire 1 * B_b $end
+$var wire 1 + A_b $end
+$var wire 1 , AB_b $end
+$scope module G1 $end
+$var wire 1 % A $end
+$var wire 1 + A_b $end
+$upscope $end
+$scope module G2 $end
+$var wire 1 $ A $end
+$var wire 1 * A_b $end
+$upscope $end
+$scope module G3 $end
+$var wire 1 + A $end
+$var wire 1 * B $end
+$var wire 1 - C_b $end
+$var wire 1 , C $end
+$scope module G2 $end
+$var wire 1 - A $end
+$var wire 1 , A_b $end
+$upscope $end
+$upscope $end
+$scope module G4 $end
+$var wire 1 , A $end
+$var wire 1 ' A_b $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0-
+1,
+1+
+1*
+1)
+1(
+0'
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+0&
+1#
+#20
+1&
+1"
+0#
+#30
+1'
+0,
+1-
+0*
+1$
+0&
+0)
+1#
+#40
+0+
+1*
+1%
+0$
+0(
+1&
+1)
+1!
+0"
+0#
+#50
+0'
+1,
+0-
+1+
+0%
+1(
+0&
+1#
+#60
+1'
+0,
+1-
+0+
+1%
+0(
+1&
+1"
+0#
+#70
+1+
+0%
+0*
+1(
+1$
+0&
+0)
+1#
+#80

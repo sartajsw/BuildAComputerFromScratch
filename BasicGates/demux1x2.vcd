@@ -1,0 +1,68 @@
+$date
+	Thu Aug 19 20:10:00 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_DEMUX2x1 $end
+$scope module demux1 $end
+$var wire 1 ! I $end
+$var wire 1 " S $end
+$var wire 1 # S_b $end
+$var wire 1 $ B $end
+$var wire 1 % A $end
+$scope module G1 $end
+$var wire 1 " A $end
+$var wire 1 # A_b $end
+$upscope $end
+$scope module G2 $end
+$var wire 1 # A $end
+$var wire 1 ! B $end
+$var wire 1 & C_b $end
+$var wire 1 % C $end
+$scope module G2 $end
+$var wire 1 & A $end
+$var wire 1 % A_b $end
+$upscope $end
+$upscope $end
+$scope module G3 $end
+$var wire 1 " A $end
+$var wire 1 ! B $end
+$var wire 1 ' C_b $end
+$var wire 1 $ C $end
+$scope module G2 $end
+$var wire 1 ' A $end
+$var wire 1 $ A_b $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1'
+1&
+0%
+0$
+1#
+0"
+0!
+$end
+#10
+1%
+0&
+1!
+#20
+0%
+1&
+0#
+0!
+1"
+#30
+1$
+0'
+1!
+#40
